@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E5924202372F190002D70AB /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E59241F2372F190002D70AB /* WorkCell.swift */; };
+		7E5924222372F448002D70AB /* work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E5924212372F448002D70AB /* work.swift */; };
 		7E6257172369CF360026CA91 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6257162369CF360026CA91 /* ExperienceViewController.swift */; };
 		7EAF57FA236991BA0064F4E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF57F9236991BA0064F4E9 /* AppDelegate.swift */; };
 		7EAF57FC236991BA0064F4E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF57FB236991BA0064F4E9 /* SceneDelegate.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E59241F2372F190002D70AB /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
+		7E5924212372F448002D70AB /* work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = work.swift; sourceTree = "<group>"; };
 		7E6257162369CF360026CA91 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
 		7EAF57F6236991BA0064F4E9 /* Labb2_IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labb2_IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAF57F9236991BA0064F4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				7EAF5807236991BC0064F4E9 /* Info.plist */,
 				7ECBE9552369BE360095CE57 /* CVViewController.swift */,
 				7E6257162369CF360026CA91 /* ExperienceViewController.swift */,
+				7E59241F2372F190002D70AB /* WorkCell.swift */,
+				7E5924212372F448002D70AB /* work.swift */,
 			);
 			path = Labb2_IOS;
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 				7ECBE9562369BE360095CE57 /* CVViewController.swift in Sources */,
 				7E6257172369CF360026CA91 /* ExperienceViewController.swift in Sources */,
 				7EAF57FA236991BA0064F4E9 /* AppDelegate.swift in Sources */,
+				7E5924202372F190002D70AB /* WorkCell.swift in Sources */,
 				7EAF57FC236991BA0064F4E9 /* SceneDelegate.swift in Sources */,
+				7E5924222372F448002D70AB /* work.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
