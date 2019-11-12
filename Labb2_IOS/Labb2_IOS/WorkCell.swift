@@ -19,4 +19,10 @@ class WorkCell: UITableViewCell {
         workTitleLabel.text = work.title
         workDateLabel.text = work.date
     }
+    func setEducation(education: Education) {
+        workImageView.image = education.image
+        workTitleLabel.text = education.title
+        workDateLabel.text = education.date
+        
+    }
 }
