@@ -27,9 +27,9 @@ class ExperienceViewController: UIViewController {
     func createArrayWork() -> [Work] {
         var tempNumberOfWork: [Work] = []
         
-        let work1 = Work(image: UIImage(named: "appPaint")!, title: "Work 1", date: "2013-2014")
-        let work2 = Work(image: UIImage(named: "SunIcon")!, title: "Work 2", date: "2014-2017")
-        let work3 = Work(image: UIImage(named: "TaxiService")!, title: "Work 3", date: "2017-2018")
+        let work1 = Work(image: UIImage(named: "appPaint")!, title: "Work 1", date: "2013-2014", text: "#")
+        let work2 = Work(image: UIImage(named: "SunIcon")!, title: "Work 2", date: "2014-2017", text: "#")
+        let work3 = Work(image: UIImage(named: "TaxiService")!, title: "Work 3", date: "2017-2018", text: "#")
         
         tempNumberOfWork.append(work1)
         tempNumberOfWork.append(work2)
@@ -52,6 +52,13 @@ class ExperienceViewController: UIViewController {
         return tempNumberOfEducation
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "MasterToDetail" {
+            let destVC = segue.destination as! DetailViewController
+            destVC.work = sender as? Work
+        }
+    }
 }
 
 extension ExperienceViewController: UITableViewDataSource, UITableViewDelegate {
@@ -70,7 +77,7 @@ extension ExperienceViewController: UITableViewDataSource, UITableViewDelegate {
         if section == 0 {
             return "Work"
         }
-        else{
+        else {
             return "Education"
         }
     }
@@ -89,5 +96,12 @@ extension ExperienceViewController: UITableViewDataSource, UITableViewDelegate {
         }
         return cell
     }
+    
+    func tableView(_tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let work = numberOfWork[indexPath.row]
+        performSegue(withIdentifier: "MasterToDetail", sender: work)
+    }
 }
+
 
