@@ -16,11 +16,16 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
     var work: Work?
+    var education: Education?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setUI()
+        if work != nil {
+            setUI()
+        }
+        else {
+            setUiEducation()
+        }
     }
     
     func setUI() {
@@ -29,7 +34,10 @@ class DetailViewController: UIViewController {
         dateLabel.text = work?.date
         descriptionLabel.text = work?.text
     }
-    
-    
-    
+    func setUiEducation() {
+        imageView.image = education?.image
+        titleLabel.text = education?.title
+        dateLabel.text = education?.date
+        descriptionLabel.text = education?.text
+    }
 }
